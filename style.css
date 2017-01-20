@@ -1,0 +1,62 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.prm{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	/*perspective: 1000px;*/
+	transform-style: preserve-3d;
+	transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+
+.panorama{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	/*perspective: 1000px;*/
+	transform-style: preserve-3d;
+	transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+}
+
+.panorama div{
+	opacity: .5;
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font: 100 28px/400px "Microsoft YaHei Ul Light";
+}
+
+.front {
+	background-color: red;
+	transform: translateZ(200px);
+}
+
+.back{
+	background-color: orange;
+	transform: translateZ(-200px);
+}
+
+.left{
+	background-color: pink;
+	transform: rotateY(90deg) translateZ(-200px);
+}
+
+.right{
+	background-color: green;
+	transform: rotateY(90deg) translateZ(200px);
+}
+
+.top{
+	background-color: blue;
+	transform: rotateX(90deg) translateZ(200px);
+}
+
+.bottom{
+	background-color: yellow;
+	transform: rotateX(90deg) translateZ(-200px);
+}
